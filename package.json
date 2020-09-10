@@ -21,5 +21,6 @@
   "bugs": {
     "url": "https://github.com/kiro7shiro/js-minievents/issues"
   },
-  "homepage": "https://github.com/kiro7shiro/js-minievents#readme"
+  "homepage": "https://github.com/kiro7shiro/js-minievents#readme",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
