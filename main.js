@@ -8,3 +8,5 @@ msgr.on('test', (data) => console.log(data))
 msgr.post('test', {'a':1, 'b':2})
 
 console.log(msgr)
+
+export { Messanger }
