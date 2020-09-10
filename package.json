@@ -1,0 +1,25 @@
+{
+  "name": "js-minievents",
+  "version": "1.0.0",
+  "description": "basic event system in vanilla js",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiro7shiro/js-minievents.git"
+  },
+  "keywords": [
+    "javascript",
+    "event",
+    "system",
+    "vanilla"
+  ],
+  "author": "kiro7shiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiro7shiro/js-minievents/issues"
+  },
+  "homepage": "https://github.com/kiro7shiro/js-minievents#readme"
+}

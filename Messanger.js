@@ -33,4 +33,6 @@ class Messanger {
     }
 }
 
+Messanger.Event = Event
+
 export { Messanger }
