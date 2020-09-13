@@ -10,12 +10,12 @@ class Messanger {
 
     off(eventName, callback) {
         const event = this.events[eventName]
-        if (event && event.callbacks.indexOf(callback) > -1) {
-            event.removeCallback(callback)
-            if (event.callbacks.length === 0) {
-                delete this.events[eventName]
-            }
+        if (!event) return false
+        const removed = event.removeCallback(callback)
+        if (removed && event.callbacks.length === 0) {
+            delete this.events[eventName]
         }
+        return removed
     }
 
     on(eventName, callback, context) {

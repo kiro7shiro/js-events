@@ -20,9 +20,21 @@ class Event {
     }
 
     removeCallback(callback) {
-        const index = this.callbacks.indexOf(callback)
+        const index = this.callbacks.findIndex(cb => {
+            if (cb.name === callback.name) {
+                var s1, s2
+                s1 = cb.toString().replace(/\s/g, '')
+                s2 = callback.toString().replace(/\s/g, '')
+                return s1 === s2
+            }else{
+                return false
+            }
+        })
         if (index > -1) {
             this.callbacks.splice(index, 1)
+            return true
+        }else{
+            return false
         }
     }
 }
